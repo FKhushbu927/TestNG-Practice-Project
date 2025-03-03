@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Dell/IdeaProjects/TestNG-Practice-Project/src/test">
+        <classes>
+            <class name="com.tutorialsninja.tests.Login">
+                <methods>
+                    <include name="verifyLoginWithValidCredentials"/>
+                    <include name="verifyLoginWithInvalidCredentials"/>
+                </methods>
+            </class>
+            <class name="com.tutorialsninja.tests.verifyRegistrationForm">
+                <methods>
+                    <include name="verifyRegistration"/>
+                </methods>
+            </class>
+            <class name="com.tutorialsninjatest.PracticeOne">
+                <methods>
+                    <include name="methodOne"/>
+                    <include name="methodTwo"/>
+                    <include name="methodThree"/>
+                </methods>
+            </class>
+            <class name="com.tutorialsninjatest.PracticeThree">
+                <methods>
+                    <include name="methodOne"/>
+                    <include name="methodTwo"/>
+                </methods>
+            </class>
+            <class name="com.tutorialsninjatest.PracticeTwo">
+                <methods>
+                    <include name="methodOne"/>
+                    <include name="methodTwo"/>
+                    <include name="methodThree"/>
+                    <include name="methodFour"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
