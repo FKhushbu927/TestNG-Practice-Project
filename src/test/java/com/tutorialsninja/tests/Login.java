@@ -12,7 +12,7 @@ import java.util.Date;
 public class Login {
 
     @Test(priority = 1)
-    public void verifyLoginWithValidCredentials(){
+    public void verifyLoginWithValidCredentials() {
         WebDriverManager.firefoxdriver().setup();
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
@@ -28,13 +28,13 @@ public class Login {
         driver.findElement(By.xpath("//input[@value='Login']")).click();
 
         System.out.println("login btn clicked");
-       Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
 
-       driver.quit();
+        driver.quit();
     }
 
     @Test(priority = 2)
-    public void verifyLoginWithInvalidCredentials(){
+    public void verifyLoginWithInvalidCredentials() {
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get("https://tutorialsninja.com/demo/");
@@ -53,9 +53,9 @@ public class Login {
         driver.quit();
     }
 
-    public String generateRandomEmailWithTimeStamp(){
+    public String generateRandomEmailWithTimeStamp() {
         Date date = new Date();
-        return date.toString().replace(" ","_").replace(":", "_")+ "@gmail.com";
+        return date.toString().replace(" ", "_").replace(":", "_") + "@gmail.com";
 
     }
 }
