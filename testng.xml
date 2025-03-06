@@ -1,38 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/Dell/IdeaProjects/TestNG-Practice-Project/src/test">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Dell/IdeaProjects/TestNG-Practice-Project/src/test/java/com/sample">
         <classes>
-            <class name="com.tutorialsninja.tests.Login">
+            <class name="com.sample.PracticeA">
                 <methods>
-                    <include name="verifyLoginWithValidCredentials"/>
-                    <include name="verifyLoginWithInvalidCredentials"/>
+                    <include name="methodA1"/>
+                    <include name="methodA2"/>
+                    <include name="methodA3"/>
+                    <include name="methodA4"/>
                 </methods>
             </class>
-            <class name="com.tutorialsninja.tests.verifyRegistrationForm">
+            <class name="com.sample.PracticeB">
                 <methods>
-                    <include name="verifyRegistration"/>
-                </methods>
-            </class>
-            <class name="com.tutorialsninjatest.PracticeOne">
-                <methods>
-                    <include name="methodOne"/>
-                    <include name="methodTwo"/>
-                    <include name="methodThree"/>
-                </methods>
-            </class>
-            <class name="com.tutorialsninjatest.PracticeThree">
-                <methods>
-                    <include name="methodOne"/>
-                    <include name="methodTwo"/>
-                </methods>
-            </class>
-            <class name="com.tutorialsninjatest.PracticeTwo">
-                <methods>
-                    <include name="methodOne"/>
-                    <include name="methodTwo"/>
-                    <include name="methodThree"/>
-                    <include name="methodFour"/>
+                    <include name="methodB1"/>
+                    <include name="methodB2"/>
+                    <include name="methodB3"/>
+                    <include name="methodB4"/>
                 </methods>
             </class>
         </classes>
